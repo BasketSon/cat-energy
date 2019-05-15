@@ -1,0 +1,59 @@
+.programs-header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  padding-top: 29px;
+
+  color: #ffffff;
+
+  background: url("../img/index-background-mobile@1x.jpg") no-repeat 0 0;
+  background-size: 100% auto;
+}
+
+.programs-header__prime-title {
+  margin: 0;
+  margin-bottom: 24px;
+  padding: 0;
+
+  text-align: center;
+  font-size: 36px;
+  line-height: 36px;
+  font-weight: 400;
+}
+
+.programs-header__slogan {
+  margin: 0;
+  margin-bottom: 28px;
+  padding: 0;
+
+  text-transform: uppercase;
+  text-align: center;
+  font-size: 14px;
+  line-height: 14px;
+  font-weight: 400;
+}
+
+.programs-header__picture {
+  width: 280px;
+  margin-bottom: 3px;
+}
+
+.programs-header__link {
+  align-self: stretch;
+  margin: 0 20px;
+  padding: 11px 0;
+
+  @include link(14px, 18px)
+  color: #ffffff;
+  font-weight: 400;
+
+  background-color: $salad;
+  &:hover {
+    background-color: $salad-hover;
+  }
+  &:active {
+    background-color: $salad-hover;
+    color: rgba(#ffffff, 0.3)
+  }
+}

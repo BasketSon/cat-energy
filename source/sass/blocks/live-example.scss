@@ -1,0 +1,32 @@
+.live-example {
+  padding-top: 20px;
+
+  background-color: $bggray;
+}
+
+.live-example__title {
+  margin: 0 20px;
+  margin-bottom: 23px;
+
+  font-size: 36px;
+  line-height: 60px;
+  font-weight: 400;
+}
+
+.live-example__description {
+  margin: 0 20px;
+  margin-bottom: 25px;
+  padding: 0;
+  padding-right: 10px;
+
+  @include par;
+}
+
+.live-example__results {
+  margin: 0 20px;
+  margin-bottom: 10px;
+}
+
+.live-example__expenses {
+  margin: 0 20px;
+}

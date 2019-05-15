@@ -1,0 +1,26 @@
+.main-nav {
+  display: flex;
+  flex-direction: column;
+}
+
+.main-nav__toggle {
+  position: absolute;
+  right: 0;
+  top: 0;
+
+  width: 64px;
+  height: 65px;
+
+  font-size: 0.01px;
+  color: transparent;
+
+  overflow: hidden;
+
+  background: transparent url("../img/icon-mobile-menu.svg") 50% no-repeat;
+  background-size: 24px 18px;
+  border: none;
+}
+
+.main-nav__list {
+  margin: 0;
+}

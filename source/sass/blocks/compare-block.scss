@@ -1,0 +1,35 @@
+.compare-block {
+ padding-top: 35px;
+ padding-bottom: 36px;
+}
+
+.compare-block__pictures-wraper {
+  position: relative;
+
+  margin-bottom: 31px;
+}
+
+.compare-block__before-picture {
+  display: block;
+  width: 100%;
+}
+
+.compare-block__after {
+  position: absolute;
+  top: 0;
+  right: 0;
+
+  width: 50%;
+  height: 100%;
+
+  background: $bggray;
+  overflow: hidden;
+}
+
+.compare-block__after-picture {
+  display: block;
+  position: absolute;
+  top: 0;
+  right: 0;
+  height: 100%;
+}

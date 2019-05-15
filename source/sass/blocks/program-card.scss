@@ -1,0 +1,106 @@
+.program-card {
+  position: relative;
+  padding: 22px 20px 22px;
+
+  background: $bggray;
+}
+
+.program-card__title {
+  margin: 0;
+  margin-bottom: 22px;
+  padding: 9px 0;
+  padding-left: 71px;
+
+  font-size: 24px;
+  line-height: 37px;
+  font-weight: 400;
+  text-transform: uppercase;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 25px;
+    left: 22px;
+
+    width: 50px;
+    height: 50px;
+
+    background: $salad;
+    border-radius: 50%;
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    background: no-repeat 0 0;
+    background-size: contain;
+  }
+
+  &--slim::after {
+    top: 23px;
+    left: 30px;
+
+    height: 49px;
+    width: 35px;
+
+    background-image: url("../img/icon-cat-slim.svg")
+  }
+
+  &--pro::after {
+    top: 35px;
+    left: 13px;
+
+    width: 67px;
+    height: 28px;
+
+    background-image: url("../img/icon-cat-pro.svg")
+  }
+}
+
+.program-card__description {
+  margin: 0;
+  margin-bottom: 18px;
+  padding: 0;
+  padding-bottom: 22px;
+
+  @include par;
+
+  border-bottom: 1px solid #d9d9d9;
+}
+
+.program-card__link {
+  display: inline-block;
+  position: relative;
+
+  margin: 0;
+  padding: 0;
+  padding-right: 44px;
+
+  @include link(16px, 16px);
+  text-align: left;
+  font-weight: 400;
+
+  &::after {
+    content: "";
+    position: absolute;
+    top: 4px;
+    right: 9px;
+
+    width: 24px;
+    height: 11px;
+
+    background: url("../img/icon-right-arrow-long.svg") 0 0 no-repeat;
+    background-size: contain;
+  }
+
+  &:hover::after {
+    right: 0;
+    width: 33px;
+
+    background-image: url("../img/icon-right-arrow-verylong.svg")
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+}

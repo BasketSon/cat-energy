@@ -1,0 +1,25 @@
+.site-list {
+  display: flex;
+  flex-direction: column;
+
+  height: 0;
+  padding: 0;
+
+  list-style: none;
+  overflow: hidden;
+  &--show {
+    // height: auto;
+  }
+}
+
+.site-list__link {
+  display: block;
+  padding: 24px 0 20px;
+  text-align: center;
+  @include link();
+
+  border-bottom: 1px solid #e6e6e6;
+  &--last {
+    border-bottom: none;
+  }
+}

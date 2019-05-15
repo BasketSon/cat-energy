@@ -1,0 +1,26 @@
+.page-header {
+  display: flex;
+  flex-direction: column;
+}
+
+.page-header__logo {
+  padding-top: 11px;
+  padding-bottom: 15px;
+  padding-left: 20px;
+
+  border-bottom: 1px solid #e6e6e6;
+  cursor: pointer;
+
+  &:hover {
+    opacity: 0.8;
+  }
+  &:active {
+    opacity: 0.6;
+  }
+}
+
+.page-header__logo-image {
+  display: block;
+  height: 38px;
+  width: 191px;
+}
