@@ -1,9 +1,9 @@
 
 body {
   position: relative;
+
   min-width: 320px;
-  max-width: 425px;
-  margin: 0;
+  margin: 0 auto;
   padding: 0;
 
   font-family: "Oswald", Arial, serif;
@@ -12,4 +12,17 @@ body {
   font-style: normal;
   color: #111111;
   background-color: #ffffff;
+}
+
+.site-wraper {
+  max-width: 500px;
+  margin: 0 auto;
+  padding: 0;
+}
+
+@media (min-width: $tablet) {
+  .site-wraper {
+    min-width: 768px;
+    max-width: 1024px;
+  }
 }

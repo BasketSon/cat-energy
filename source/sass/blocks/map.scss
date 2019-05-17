@@ -1,0 +1,25 @@
+.map {
+  position: relative;
+  overflow: hidden;
+}
+
+.map__map-picture {
+  display: block;
+
+  margin-top: -39px;
+  width: 100%;
+}
+.map__pin {
+    position: absolute;
+    bottom: 47%;
+    left: calc(50% - 31px);
+
+    width: 55px;
+    height: 53px;
+
+    background: url("../img/map-pin.png") 0 0 no-repeat;
+    background-size: cover;
+    @media(min-width: 400px) {
+      bottom: 46%;
+    }
+}

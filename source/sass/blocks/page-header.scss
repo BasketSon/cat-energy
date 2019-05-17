@@ -23,4 +23,31 @@
   display: block;
   height: 38px;
   width: 191px;
+
+  content: url("../img/logo-mobile.svg");
+}
+
+@media (min-width: $tablet) {
+  .page-header {
+    flex-direction: row;
+    align-items: center;
+
+    padding: 20px 30px;
+  }
+
+  .page-header__logo {
+    padding: 0;
+    margin-right: 30px;
+    border: none;
+  }
+
+  .page-header__logo-image {
+    content: url("../img/logo-tablet.svg");
+    height: 58px;
+    width: 173px;
+  }
+
+  .page-header__main-nav {
+    margin-left: auto;
+  }
 }

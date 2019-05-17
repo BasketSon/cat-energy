@@ -1,8 +1,8 @@
+@import "fonts.scss";
 @import "normalize.scss";
-@import "general-style.scss";
 @import "variables.scss";
 @import "mixins.scss";
-@import "fonts.scss";
+@import "general-style.scss";
 @import "blocks/page-header.scss";
 @import "blocks/main-nav.scss";
 @import "blocks/site-list.scss";
@@ -16,3 +16,8 @@
 @import "blocks/expenses.scss";
 @import "blocks/compare-block.scss";
 @import "blocks/slider.scss";
+@import "blocks/contacts.scss";
+@import "blocks/map.scss";
+@import "blocks/page-footer.scss";
+@import "blocks/social-list.scss";
+@import "blocks/copyright.scss";

@@ -45,7 +45,6 @@
 
   background-color: $salad;
   border-radius: 3px;
-
 }
 
 .slider__range-handle {
@@ -57,4 +56,5 @@
   width: calc(100% - 10px);
 
   opacity: 0;
+  cursor: pointer;
 }

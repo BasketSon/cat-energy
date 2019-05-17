@@ -1,7 +1,23 @@
 .expenses {
-
+  margin: 0;
+  padding: 0;
   text-align: center;
   font-size: 14px;
   line-height: 20px;
   text-transform: uppercase;
+}
+
+@media (min-width: $tablet) {
+  .expenses {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+
+    margin-top: 14px;
+    font-size: 20px;
+  }
+
+  .expenses__label {
+    margin-bottom: 10px;
+  }
 }

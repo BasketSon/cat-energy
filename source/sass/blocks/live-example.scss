@@ -15,18 +15,48 @@
 
 .live-example__description {
   margin: 0 20px;
-  margin-bottom: 25px;
+  margin-bottom: 26px;
   padding: 0;
   padding-right: 10px;
 
   @include par;
 }
 
-.live-example__results {
+.live-example__container {
+  display: flex;
+  flex-direction: column;
+
   margin: 0 20px;
+}
+
+.live-example__results {
+  margin: 0;
   margin-bottom: 10px;
 }
 
-.live-example__expenses {
-  margin: 0 20px;
+@media (min-width: $tablet) {
+  .live-example {
+    background-color: #ffffff;
+  }
+
+  .live-example__title {
+    margin: 23px 30px 64px;
+
+    font-size: 60px;
+  }
+
+  .live-example__description {
+    margin: 0 30px 50px;
+
+    font-size: 16px;
+    line-height: 24px;
+  }
+
+  .live-example__container {
+    margin: 0 30px;
+    margin-bottom: 63px;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
 }

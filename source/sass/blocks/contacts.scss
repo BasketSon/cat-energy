@@ -1,0 +1,27 @@
+.contacts {
+  margin: 0;
+}
+
+.contacts__text-block {
+  display: flex;
+  flex-wrap: wrap;
+
+  padding: 0 20px;
+}
+
+.contacts__text {
+  margin: 30px 0 25px;
+  padding: 0;
+  width: 50%;
+  box-sizing: border-box;
+  &--plea {
+    padding-right: 10px;
+    font-size: 16px;
+    line-height: 20px;
+    text-transform: uppercase;
+  }
+  &--adress {
+    @include par;
+    line-height: 20px;
+  }
+}

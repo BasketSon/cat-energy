@@ -1,7 +1,5 @@
 .features {
   padding: 20px;
-
-  border-bottom: 1px solid $bggray;
 }
 
 .features__title {
@@ -17,4 +15,20 @@
 
 .features__list {
   margin: 0;
+}
+
+@media (min-width: $tablet) {
+  .features {
+    padding: 46px 0 0;
+
+    border-bottom: 1px solid #e6e6e6;
+  }
+
+  .features__title {
+    margin: 0;
+    margin-bottom: 72px;
+    padding-left: 30px;
+
+    font-size: 60px;
+  }
 }

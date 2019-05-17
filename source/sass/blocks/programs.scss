@@ -2,8 +2,8 @@
   margin-bottom: 22px;
 }
 
-.programs__wrapper {
-  margin: 0 20px;
+.programs__wraper {
+  padding: 0 20px;
 }
 
 .programs__list {
@@ -17,5 +17,18 @@
   margin-bottom: 20px;
   &:last-child {
     margin-bottom: 0;
+  }
+}
+
+@media (min-width: $tablet) {
+  .programs__header {
+    margin-bottom: 1px;
+  }
+  .programs__wraper {
+    padding: 0 30px;
+  }
+
+  .programs__card {
+    margin-bottom: 30px;
   }
 }

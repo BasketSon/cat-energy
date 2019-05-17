@@ -1,12 +1,11 @@
 .main-nav {
-  display: flex;
-  flex-direction: column;
+  position: relative;
 }
 
 .main-nav__toggle {
   position: absolute;
   right: 0;
-  top: 0;
+  top: -65px;
 
   width: 64px;
   height: 65px;
@@ -23,4 +22,10 @@
 
 .main-nav__list {
   margin: 0;
+}
+
+@media (min-width: $tablet) {
+  .main-nav__toggle {
+    display: none;
+  }
 }
