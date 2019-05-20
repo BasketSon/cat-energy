@@ -5,6 +5,7 @@
 .contacts__text-block {
   display: flex;
   flex-wrap: wrap;
+  justify-content: space-between;
 
   padding: 0 20px;
 }
@@ -21,7 +22,36 @@
     text-transform: uppercase;
   }
   &--adress {
+    display: flex;
+    flex-direction: column;
     @include par;
     line-height: 20px;
+  }
+}
+
+@media (min-width: $tablet) {
+  .contacts__text-block {
+      padding: 0 70px;
+  }
+
+  .contacts__text {
+    margin: 64px 0 55px;
+    width: 30%;
+    box-sizing: border-box;
+    &--plea {
+      font-size: 20px;
+      line-height: 25px;
+
+    }
+    &--adress {
+      padding-right: 2px;
+      align-items: flex-end;
+
+      text-align: right;
+      font-size: 16px;
+      span {
+        margin-top: 20px;
+      }
+    }
   }
 }

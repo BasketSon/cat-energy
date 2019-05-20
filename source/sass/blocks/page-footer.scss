@@ -32,3 +32,20 @@
 .page-footer__social {
   margin: 0;
 }
+
+@media (min-width: $tablet) {
+  .page-footer {
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+
+    padding: 34px 30px;
+
+    background-color: $bggray;
+  }
+
+  .page-footer__logo {
+    padding: 0;
+    border-bottom: none;
+  }
+}

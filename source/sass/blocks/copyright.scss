@@ -25,3 +25,9 @@
 
   fill: #666666;
 }
+
+@media (min-width: $tablet) {
+  .copyright {
+    width: 162px;
+  }
+}

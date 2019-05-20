@@ -5,6 +5,7 @@
 
 .map__map-picture {
   display: block;
+  content: url("../img/bg-map-mobile@1x.png");
 
   margin-top: -39px;
   width: 100%;
@@ -17,9 +18,29 @@
     width: 55px;
     height: 53px;
 
-    background: url("../img/map-pin.png") 0 0 no-repeat;
+    background:
+    url("../img/map-pin.png") 0 0 no-repeat;
     background-size: cover;
     @media(min-width: 400px) {
       bottom: 46%;
     }
+}
+
+@media (min-width: $tablet) {
+  .map__map-picture {
+    content: url("../img/bg-map-tablet@1x.png");
+
+    margin: 0;
+  }
+
+  .map__pin {
+      bottom: 36%;
+      left: calc(50% - 62px);
+
+      width: 113px;
+      height: 106px;
+
+      background:
+      url("../img/map-pin.png") 0 0 no-repeat;
+  }
 }
