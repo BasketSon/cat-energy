@@ -7,8 +7,11 @@
 
   color: #ffffff;
 
-  background: url("../img/index-background-mobile@1x.jpg") no-repeat 0 0;
-  background-size: 100% auto;
+  background:
+  url("../img/index-background-mobile@1x.jpg") no-repeat 50% 0,
+  linear-gradient(to right, #65a93c 25%, #63a73a 75%) no-repeat 50% 0;
+  background-size: 320px 305px,
+  100% 305px;
 }
 
 .programs-header__prime-title {
@@ -32,12 +35,6 @@
   font-size: 14px;
   line-height: 14px;
   font-weight: 400;
-  @media(min-width: 400px) {
-    margin-bottom: 100px
-  }
-  @media(min-width: 480px) {
-    margin-bottom: 180px
-  }
 }
 
 .programs-header__container {
@@ -50,7 +47,6 @@
 }
 
 .programs-header__picture {
-  content: url("../img/index-can-mobile@1x.png");
   width: 280px;
   margin-bottom: 3px;
 }
@@ -104,8 +100,7 @@
   }
 
   .programs-header__picture {
-    content: url("../img/index-can-tablet@1x.jpg");
-    width: 100%;
+    width: 709px;
     margin-bottom: 0;
   }
 

@@ -10,12 +10,16 @@
     <div class="site-wraper">
       <header class="page-header">
         <a class="page-header__logo" aria-label="Логотип Cat-energy">
-          <img class="page-header__logo-image">
+          <picture>
+            <source media="(max-width: 767px)" srcset="img/logo-mobile.svg">
+            <source media="(min-width: 768px)" srcset="img/logo-tablet.svg">
+            <img class="page-header__logo-image" src="img/logo-tablet.svg" alt="Логотип Cat-energy" width="191" height="38">
+          </picture>
         </a>
 
         <nav class="page-header__main-nav main-nav">
           <button class="main-nav__toggle" type="button" name="button">Открыть меню</button>
-          <ul class="main-nav__list site-list">
+          <ul class="main-nav__list site-list site-list--show">
             <li class="site-list__item">
               <a class="site-list__link site-list__link--active"><span class="site-list__active">Главная</span></a>
             </li>
@@ -34,7 +38,11 @@
             <h1 class="programs-header__prime-title">Функциональное <br>питание для котов</h1>
             <b class="programs-header__slogan">Занялся собой? Займись котом!</b>
             <div class="programs-header__container">
-              <img class="programs-header__picture" alt="Корм с курицей">
+              <picture>
+                <source media="(max-width: 767px)" srcset="img/index-can-mobile@1x.png">
+                <source media="(min-width: 768px)" srcset="img/index-can-tablet@1x.jpg">
+                <img class="programs-header__picture" width="280" src="img/index-can-mobile@1x.png" alt="Корм с курицей">
+              </picture>
               <a class="programs-header__link" href="#">Подобрать программу</a>
             </div>
           </header>
@@ -69,7 +77,7 @@
                   <p>Замените один-два приема обычной еды на наше функциональное питание.</p>
                 </li>
                 <li class="features-list__item">
-                  <p>Уже через месяц наслаждайтесь изменениями к лучшему вашего питомца!</p>
+                  <p>Уже через месяц наслаждайтесь изменениями к лучшему <br>вашего питомца!</p>
                 </li>
               </ol>
             </section>
@@ -93,16 +101,20 @@
                 </div>
                 <div class="live-example__compare compare-block">
                     <div class="compare-block__before">
-                      <img class="compare-block__before-picture" alt="Фото до">
+                      <picture>
+                        <source media="(max-width: 767px)" srcset="img/before-mobile@1x.png">
+                        <source media="(min-width: 768px)" srcset="img/before-tablet@1x.png">
+                        <img class="compare-block__before-picture" src="img/before-mobile@1x.png" width="320" alt="Фото до">
+                      </picture>
                     </div>
                     <div class="compare-block__after">
                     </div>
                   <div class="compare-block__slider slider">
                     <button class="slider__label slider__label--left">Было</button>
                     <div class="slider__controls">
+                      <input class="slider__range-handle" id="slider-handle" type="range" name="slider-handle" value="50" min="0" max="100" step="1">
                       <div class="slider__handle">
                       </div>
-                      <input class="slider__range-handle" id="slider-handle" type="range" name="slider-handle" value="50" min="0" max="100" step="1">
                     </div>
                     <button class="slider__label slider__label--right">Стало</button>
                   </div>
@@ -117,7 +129,11 @@
                   </div>
 
                   <div class="contacts__map map">
-                    <img class="map__map-picture" alt="Магазин находится по адресу ул. Большая Конюшенная, д. 19/8
+                    <picture>
+                      <source media="(max-width: 767px)" srcset="img/bg-map-mobile@1x.png">
+                      <source media="(min-width: 768px)" srcset="img/bg-map-tablet@1x.png">
+                      <img class="map__map-picture" src="img/bg-map-mobile@1x.png" alt="Магазин находится по адресу ул. Большая Конюшенная, д. 19/8
+                    </picture>
                     Санкт-Петербург">
                     <div class="map__pin">
                     </div>
@@ -141,7 +157,7 @@
                 </ul>
                 <a class="page-footer__copyright copyright" href="https://htmlacademy.ru/intensive/adaptive" aria-label="Ссылка на HTML Academy">
                   HTML Academy
-                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="10 8 40 44"  class="copyright__image">
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="10 8 40 44" width="27" height="35" class="copyright__image">
                     <path d="M30.2 5h-.2l-19.7 2.1v36.2l19.7 11.7 19.7-11.7v-36.2l-19.5-2.1zm17 36.8l-17.2 10.2-17.2-10.2v-14.8l17.1 10.2v1.8l-11.7-7v1.8l11.8 7.1v1.9l-11.8-7v1.8l11.8 7 11.9-7.1v-7.6l5.3-3.2v15.1zm-.1-17l-4.7 2.8-2.2 1.3-10.3-6.1v1.8l8.8 5.3h-.1l-.2.1-1.3.7-7.3-4.3v1.8l5.8 3.4-1.4.9-4.3-2.6v1.8l2.9 1.7-2.9 1.7-17-10.1 17-10.2 17.2 10zm.1-1.8l-17.3-10.2-17.1 10.2v-13.6l17.2-1.8 17.2 1.8v13.6z"/>
                   </svg>
 
@@ -149,8 +165,8 @@
               </div>
             </footer>
           </div>
-
-  <script src="js/before-after-slider.js"></script>
+  <script src="js/onload.js"></script>
   <script src="js/menu-toggle.js"></script>
+  <script src="js/before-after-slider.js"></script>
   </body>
 </html>

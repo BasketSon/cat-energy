@@ -20,9 +20,8 @@
 }
 
 .compare-block__before-picture {
-  content: url("../img/before-mobile@1x.png");
-
   width: 320px;
+  margin: 0 auto;
 }
 
 .compare-block__after {
@@ -53,8 +52,6 @@
   }
 
   .compare-block__before-picture {
-    content: url("../img/before-tablet@1x.png");
-
     width: 677px;
     height: 499px;
 
