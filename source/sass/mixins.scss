@@ -1,0 +1,17 @@
+@mixin link($fs: 20px, $lh: 20px) {
+  text-transform: uppercase;
+  text-decoration: none;
+  text-align: center;
+  font-size: $fs;
+  line-height: $lh;
+  font-weight: 500;
+
+  color: #111111;
+
+  cursor: pointer;
+}
+
+@mixin par {
+  font-family: Arial;
+  color: #444444;
+}
