@@ -5,18 +5,16 @@ var afterGradient = document.querySelector('.compare-block__after');
 var gradientStyle = window.getComputedStyle(afterGradient);
 var gradientWidth = gradientStyle.width;
 
-window.onload = function () {
-  afterGradient.style.clip = 'rect(auto, auto, auto, ' + (parseInt(gradientWidth, 10) * 0.5) + 'px)';
-}
 
-
-var eventList = ['change', 'keyup',
-'keydown', 'mousedown', 'mousemove', 'touchmove'];
+var eventList = ['change', 'keyup', 'input',
+'keydown', 'mousedown', 'touchmove'];
 for (var i = 0; i < eventList.length; i++) {
   sliderRealHandle.addEventListener(eventList[i], function (ev) {
     if (eventList[i] === 'touchmove') {
       ev.preventDefault();
     }
+    var gradientStyle = window.getComputedStyle(afterGradient);
+    var gradientWidth = gradientStyle.width;
     sliderFakeHandle.style.width = (sliderRealHandle.value) + '%';
     afterGradient.style.clip = 'rect(auto, auto, auto, ' + (parseInt(gradientWidth, 10) * sliderRealHandle.value / 100) + 'px)';
   })

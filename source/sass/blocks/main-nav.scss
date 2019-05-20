@@ -18,7 +18,12 @@
   background: transparent url("../img/icon-mobile-menu.svg") 50% no-repeat;
   background-size: 24px 18px;
   border: none;
+  &--close {
+    background-image:url("../img/icon-close.svg");
+    background-size: 18px 18px;
+  }
 }
+
 
 .main-nav__list {
   margin: 0;

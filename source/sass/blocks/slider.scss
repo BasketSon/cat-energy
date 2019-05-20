@@ -44,13 +44,35 @@
 }
 
 .slider__handle {
+  position: relative;
+
   height: 6px;
   width: 50%;
 
   background-color: $salad;
   border-radius: 3px;
-}
 
+  pointer-events: none;
+
+  &::after {
+      content: "";
+      position: absolute;
+      top: calc(50% - 3px);
+      right: -3px;
+      height: 6px;
+      width: 6px;
+      box-sizing: border-box;
+
+      background-color: $salad;
+      border: 1px solid #cdcdcd;
+      border-radius: 50%;
+      box-shadow:
+      inset 0 0 0 12px #ffffff,
+      0 2px 5px 0 rgba(#000000, 0.15);
+
+      opacity: 0;
+  }
+}
 .slider__range-handle {
   -webkit-appearance: none;
   display: block;
@@ -63,37 +85,25 @@
   background: none;
   cursor: pointer;
   outline: none;
+  opacity: 0;
 
-  &::-webkit-slider-thumb {
-    -webkit-appearance: none;
-    position: relative;
-
-    height: 6px;
-    width: 6px;
-    box-sizing: border-box;
-
-    background-color: $salad;
-    border: 1px solid #cdcdcd;
-    border-radius: 50%;
+  &:hover + .slider__handle::after{
     box-shadow:
     inset 0 0 0 12px #ffffff,
-    0 2px 5px 0 rgba(#000000, 0.15);
+    0 3px 5px 0 rgba(#000000, 0.25);
+  }
+  &:active + .slider__handle::after{
+    border: 2px solid $salad;
+    box-shadow:
+    inset 0 0 0 11px #ffffff,
+    0 3px 5px 0 rgba(#000000, 0.25);
+  }
 
-    opacity: 0;
-
-    &:hover {
-      box-shadow:
-      inset 0 0 0 12px #ffffff,
-      0 3px 5px 0 rgba(#000000, 0.25);
-    }
-    &:active {
-      border: 2px solid $salad;
-      box-shadow:
-      inset 0 0 0 11px #ffffff,
-      0 3px 5px 0 rgba(#000000, 0.25);
-    }
+  &::-ms-tooltip {
+    display: none;
   }
 }
+
 
 @media (min-width: $tablet) {
   .slider {
@@ -139,20 +149,22 @@
 
   .slider__handle {
     background: none;
- }
 
-   .slider__range-handle {
-    top: calc(50% - 17px);
-    left: -17px;
+    &::after {
+      top: calc(50% - 17px);
+      right: -17px;
 
-    width: calc(100% + 34px);
-    height: 34px;
-
-    &::-webkit-slider-thumb {
       height: 33px;
       width: 33px;
 
       opacity: 1;
     }
+ }
+
+   .slider__range-handle {
+     top: -14px;
+
+    width: 100%;
+    height: 34px;
   }
 }

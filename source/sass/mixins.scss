@@ -15,3 +15,16 @@
   font-family: Arial;
   color: #444444;
 }
+
+@mixin after-img($url) {
+  position: relative;
+  &::after {
+    background: $url 0 0 no-repeat;
+    background-size: contain;
+    position: relative;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+  }
+}
