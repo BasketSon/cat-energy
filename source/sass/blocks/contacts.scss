@@ -55,3 +55,36 @@
     }
   }
 }
+
+@media (min-width: $desktop) {
+  .contacts {
+    position: relative;
+  }
+
+  .contacts__text-block {
+    position: absolute;
+    z-index: 1;
+    top: 95px;
+    left: $padding;
+
+    padding: 0;
+    width: 39.6%;
+
+    background-color: #ffffff;
+  }
+
+  .contacts__text {
+    width: 50%;
+    &--plea {
+      padding-left: 13.33%
+    }
+    &--adress {
+      padding: 0;
+      padding-left: 7%;
+      padding-right: 13.33%;
+      align-items: flex-start;
+
+      text-align: left;
+    }
+  }
+}

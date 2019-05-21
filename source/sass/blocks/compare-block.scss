@@ -48,12 +48,13 @@
     text-align: center;
     width: 100%;
     height: 499px;
-    margin: 0 auto 30px;
+    margin: 0 auto 28px;
   }
 
   .compare-block__before-picture {
-    width: 677px;
-    height: 499px;
+
+    width: 690px;
+    height: 515px;
 
     transform: translateX(7px)
   }
@@ -73,4 +74,46 @@
     overflow: hidden;
   }
 
+}
+
+@media (min-width: $desktop) {
+  .compare-block {
+    padding: 0;
+    padding-bottom: 66px;
+    background-image: none;
+    box-sizing: content-box;
+  }
+
+  .compare-block__before {
+    position: relative;
+
+    width: 100%;
+    height: 526px;
+    margin: 0 auto 29px;
+    overflow: hidden;
+  }
+
+  .compare-block__before-picture {
+    position: absolute;
+    left: calc(50% - 365px);
+    top: 5px;
+
+    width: 690px;
+    height: auto;
+
+    transform: none;
+  }
+
+  .compare-block__after {
+    top: 0;
+    right: auto;
+    left: 0;
+
+    width: 100%;
+    height: 100%;
+
+    background:
+    url("../img/after-desktop@1x.png") top 5px left calc(50% - 20px)  no-repeat,
+    linear-gradient(#ffffff 195px, #eaeaea 195px);
+  }
 }

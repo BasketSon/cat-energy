@@ -36,8 +36,16 @@
 
       width: 113px;
       height: 106px;
+  }
+}
 
-      background:
-      url("../img/map-pin.png") 0 0 no-repeat;
+@media (min-width: $desktop) {
+  .map__map-picture {
+    width: 100%;
+    max-width: 2440px;
+  }
+
+  .map__pin {
+      left: 69.3%;
   }
 }

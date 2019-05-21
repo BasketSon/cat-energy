@@ -49,3 +49,9 @@
     border-bottom: none;
   }
 }
+
+@media (min-width: $desktop) {
+  .page-footer {
+    padding: 37px $padding 30px;
+  }
+}

@@ -60,3 +60,60 @@
     flex-wrap: wrap;
   }
 }
+
+@media (min-width: $desktop) {
+  .live-example {
+    position: relative;
+
+    display: flex;
+    padding: 0;
+
+    background:
+    linear-gradient(#ffffff 195px, $bggray 195px);
+
+    &::after {
+      content: "";
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      right: 0;
+      width: $padding;
+
+      background:
+      linear-gradient(#ffffff 195px, #eaeaea 195px);
+    }
+  }
+
+  .live-example__wraper {
+    flex-basis: 50%;
+    padding-left: $padding;
+    flex-shrink: 0;
+    box-sizing: border-box;
+    padding-top: 60px;
+  }
+
+  .live-example__compare {
+    flex-basis: 50%;
+    margin-right: 4.86%
+  }
+
+  .live-example__title {
+    margin: 0 0 145px;
+  }
+
+  .live-example__description {
+    margin: 0 0 66px;
+    padding-right: 175px;
+  }
+
+  .live-example__container {
+    margin: 0;
+
+    flex-direction: column;
+    justify-content: flex-start;
+  }
+
+  .live-example__results {
+    margin-bottom: 46px;
+  }
+}

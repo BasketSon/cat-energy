@@ -117,3 +117,47 @@
     }
   }
 }
+
+@media (min-width: $desktop) {
+  .features-list {
+    margin: 0;
+    justify-content: space-between;
+  }
+
+  .features-list__item {
+    min-height: 230px;
+    margin-bottom: 20px;
+    padding: 0;
+    padding-top: 111px;
+    width: 20.1%;
+    box-sizing: border-box;
+
+    p {
+      padding: 0;
+    }
+
+    &:before {
+      left: 0;
+    }
+    &:first-child::before {
+      background-image: url("../img/advantage-leaf@1x.png");
+    }
+    &:nth-child(2)::before {
+      background-image: url("../img/advantage-powder@1x.png");
+    }
+    &:nth-child(3)::before {
+      background-image: url("../img/advantage-dining@1x.png");
+    }
+    &:last-child::before {
+      background-image: url("../img/advantage-clock@1x.png");
+    }
+
+    &:after {
+      right: 0px;
+    }
+
+    &:first-child::after {
+      right: 15px;
+    }
+  }
+}

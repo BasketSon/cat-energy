@@ -32,3 +32,15 @@
     font-size: 60px;
   }
 }
+
+@media (min-width: $desktop) {
+  .features {
+    padding: 0 $padding;
+
+    border-bottom: none;
+  }
+
+  .features__title {
+    padding: 0;
+  }
+}
