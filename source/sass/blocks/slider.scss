@@ -168,3 +168,19 @@
     height: 34px;
   }
 }
+
+@media (min-width: $desktop) {
+  .slider {
+    padding: 0;
+  }
+
+  .slider__label {
+    &--left {
+      margin-left: 40px;
+    }
+
+    &--right {
+      margin-right: 40px;
+    }
+  }
+}

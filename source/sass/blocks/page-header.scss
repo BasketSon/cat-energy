@@ -49,3 +49,20 @@
     margin-left: auto;
   }
 }
+
+@media (min-width: $desktop) {
+  .page-header {
+    padding: 50px 110px 0;
+    box-sizing: content-box;
+
+  }
+
+  .page-header__logo-image {
+    height: 59px;
+    width: 202px;
+  }
+
+  .page-header__main-nav {
+    flex-basis: 50%;
+  }
+}

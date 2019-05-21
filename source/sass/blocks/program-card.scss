@@ -169,3 +169,49 @@
     }
   }
 }
+
+@media (min-width: $desktop) {
+  .program-card {
+    padding: 76px 53px 62px;
+  }
+
+  .program-card__title {
+    margin-bottom: 73px;
+    padding: 0 0 0 161px;
+
+    &::before {
+      top: 47px;
+      left: 52px;
+      right: auto;
+
+      width: 100px;
+      height: 100px;
+    }
+
+    &--slim::after {
+      top: 40px;
+      left: 66px;
+      right: auto;
+
+      height: 97px;
+      width: 70px;
+    }
+
+    &--pro::after {
+      top: 69px;
+      left: 34px;
+      right: auto;
+
+      width: 134px;
+      height: 56px;
+    }
+  }
+
+  .program-card__description {
+    margin-bottom: 30px;
+
+    &--short {
+      padding-right: 0;
+    }
+  }
+}

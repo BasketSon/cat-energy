@@ -74,3 +74,24 @@
     border: none;
   }
 }
+
+@media (min-width: $desktop) {
+
+  .site-list__link {
+    padding: 22px 0 20px;
+
+    font-size: 20px;
+
+    color: #ffffff;
+  }
+
+  .site-list__active {
+    &::after {
+      left: 1px;
+      right: 1px;
+      top: 34px;
+
+      background-color: #ffffff;
+    }
+  }
+}

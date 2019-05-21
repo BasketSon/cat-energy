@@ -21,3 +21,17 @@
     margin-bottom: 10px;
   }
 }
+
+@media (min-width: $desktop) {
+  .expenses {
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: flex-start;
+
+    margin: 0;
+  }
+
+  .expenses__label {
+    margin-right: 65px;
+  }
+}
