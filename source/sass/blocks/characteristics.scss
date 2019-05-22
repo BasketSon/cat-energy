@@ -1,0 +1,20 @@
+.characteristics {
+  width: 100%;
+  border-collapse: collapse;
+
+  @include par();
+  font-size: 12px;
+  line-height: 16px;
+}
+
+.characteristics__row {
+  margin-bottom: 5px;
+}
+.characteristics__property {
+  padding: 0;
+}
+
+.characteristics__value {
+  padding: 0;
+  text-align: right;
+}

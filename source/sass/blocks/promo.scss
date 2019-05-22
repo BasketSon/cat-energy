@@ -1,0 +1,37 @@
+.promo {
+  display: flex;
+  flex-direction: column;
+
+  height: 289px;
+  width: 280px;
+  margin: 0 auto 32px;
+
+  background: $salad url("../img/gift-photo-mobile@1x.jpg") 0 0 no-repeat;
+  background-size: cover;
+
+  @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
+    background-image: url("../img/gift-photo-mobile@2x.jpg");
+  }
+}
+
+.promo__present {
+  flex-basis: 50%;
+  background: url("../img/icon-gift.svg") no-repeat 50% 63px;
+  background-size: 55px 60px;
+}
+
+.promo__offer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  flex-basis: 50%;
+  margin: 0;
+  padding: 0 55px;
+
+  text-align: center;
+  color: #ffffff;
+  font-size: 16px;
+  line-height: 20px;
+  font-family: Arial;
+}

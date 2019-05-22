@@ -19,9 +19,7 @@
   @include link();
 
   border-bottom: 1px solid #e6e6e6;
-  &--last {
-    border-bottom: none;
-  }
+
   &:hover {
     opacity: 0.6;
   }
@@ -92,6 +90,16 @@
       top: 34px;
 
       background-color: #ffffff;
+    }
+  }
+
+  .site-wraper--inner .site-list__link {
+    color:inherit;
+  }
+
+  .site-wraper--inner .site-list__active {
+    &::after {
+      background-color: $salad;
     }
   }
 }

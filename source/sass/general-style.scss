@@ -11,13 +11,15 @@ body {
   line-height: 18px;
   font-style: normal;
   color: #111111;
-  background-color: #ffffff;
+  background-color: $bggray;
 }
 
 .site-wraper {
   max-width: 500px;
   margin: 0 auto;
   padding: 0;
+
+  background-color: #ffffff;
 }
 
 @media (min-width: $tablet) {
@@ -38,5 +40,15 @@ body {
     background-size:
     720px 696px,
     100% 696px;
+
+
+    @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
+      background-image: url("../img/index-background-desktop@2x.jpg"),
+      linear-gradient(to right, #ffffff 50%, #65a93c 50%);
+    }
+
+    &--inner {
+      background: #ffffff;
+    }
   }
 }

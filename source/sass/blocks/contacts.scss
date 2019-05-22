@@ -1,5 +1,9 @@
 .contacts {
   margin: 0;
+
+  &--gray {
+    background-color: $bggray
+  }
 }
 
 .contacts__text-block {
@@ -28,6 +32,7 @@
     line-height: 20px;
   }
 }
+
 
 @media (min-width: $tablet) {
   .contacts__text-block {
