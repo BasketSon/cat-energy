@@ -72,3 +72,46 @@
     color: rgba(#444444, 0.3)
   }
 }
+
+@media (min-width: $tablet) {
+  .catalog-more {
+    align-items: center;
+    margin-top: 140px;
+    padding: 164px 36px 40px 37px;
+
+    border: 1px solid #cdcdcd;
+
+    &::before {
+      top: 55px;
+
+      height: 60px;
+    }
+
+    &::after {
+      top: 84px;
+      left: calc(50% - 30px);
+
+      width: 60px;
+    }
+  }
+
+  .catalog-more__title {
+    width: 150px;
+    margin-bottom: 25px;
+
+
+    font-size: 20px;
+  }
+
+  .catalog-more__text {
+    width: 170px;
+    margin-bottom: 82px;
+
+    line-height: 20px;
+    font-size: 16px;
+  }
+
+  .catalog-more__show-button {
+    align-self: stretch;
+  }
+}

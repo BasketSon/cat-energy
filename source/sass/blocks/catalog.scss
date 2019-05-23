@@ -11,10 +11,37 @@
 
 .catalog__list {
   display: flex;
-  flex-direction: column;
+  flex-wrap: wrap;
 
   margin: 0;
   padding: 0;
 
   list-style: none;
+}
+
+.catalog__item {
+  flex-basis: 100%;
+}
+
+@media (min-width: $tablet) {
+  .catalog__title {
+    padding: 30px 30px 26px;
+    margin: 0;
+
+    font-size: 60px;
+
+    border-bottom: none;
+  }
+
+  .catalog__list {
+    justify-content: space-between;
+
+    padding: 0 30px;
+  }
+
+  .catalog__item {
+    flex-basis: 45.8%;
+
+    box-sizing: border-box;
+  }
 }

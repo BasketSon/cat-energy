@@ -35,3 +35,41 @@
   line-height: 20px;
   font-family: Arial;
 }
+
+@media (min-width: $tablet) {
+  .promo {
+    flex-direction: row;
+
+    height: 200px;
+    width: auto;
+    margin: 0 30px 75px;
+
+    background: $salad url("../img/gift-photo-tablet@1x.jpg") 50% no-repeat;
+    background-size: cover;
+
+    @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
+      background-image: url("../img/gift-photo-tablet@2x.jpg");
+    }
+  }
+
+  .promo__present {
+    background: url("../img/icon-gift.svg") no-repeat calc(50% - 59px) 65px ;
+    background-size: 55px 60px;
+  }
+
+  .promo__offer {
+    justify-content: flex-start;
+    flex-basis: 161px;
+
+    padding: 0;
+    margin-right: 17.66%;
+    margin-left: auto;
+    box-sizing: border-box;
+
+    text-align: left;
+    color: #ffffff;
+    font-size: 16px;
+    line-height: 20px;
+    font-family: Arial;
+  }
+}
