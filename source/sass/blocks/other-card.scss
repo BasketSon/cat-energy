@@ -10,7 +10,7 @@
 .other-card__name {
   flex-basis: 100%;
   margin: 0;
-  margin-bottom: 15px;
+  margin-bottom: 14px;
   padding: 0;
 
   font-size: 16px;
@@ -42,7 +42,7 @@
   flex-basis: 100%;
 
   margin: 0;
-  padding: 10px 0;
+  padding: 11px 0 10px;
 
   @include link(16px, 20px)
   color: #ffffff;
@@ -73,7 +73,7 @@
 
   .other-card__name {
     flex-basis: 50%;
-    margin-bottom: 26px;
+    margin-bottom: 25px;
 
     font-size: 20px;
     line-height: 20px;
@@ -95,5 +95,38 @@
 
   .other-card__price {
     flex-grow: 0;
+  }
+}
+
+@media (min-width: $desktop) {
+  .other-card {
+    padding: 15px 0;
+
+    border: none;
+    border-bottom: 1px solid #cdcdcd;
+  }
+
+  .other-card__name {
+    flex-basis: 31.75%;
+    margin: 0;
+    margin-right: 40px;
+  }
+
+  .other-card__amount {
+    flex-basis: 27.3%;
+    flex-grow: 0;
+
+    text-align: left;
+  }
+
+  .other-card__price {
+    flex-basis: 8.94%;
+    flex-grow: 0;
+
+    text-align: left;
+  }
+
+  .other-card__order-button {
+    flex-basis: 27.3%;
   }
 }

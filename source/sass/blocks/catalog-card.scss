@@ -126,3 +126,11 @@
       margin: 0 37px 0 38px;
     }
 }
+
+@media (min-width: $desktop) {
+  .catalog-card__image-wraper {
+    picture {
+      max-width: 280px;
+    }
+  }
+}

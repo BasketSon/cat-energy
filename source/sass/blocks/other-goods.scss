@@ -1,5 +1,5 @@
 .other-goods {
-  margin: 0 0 39px;
+  margin: 0 0 32px;
 }
 
 .other-goods__title {
@@ -23,16 +23,23 @@
 }
 
 .other-goods__list {
-  margin: 0 20px;
+  margin: 0 20px 39px;
   padding: 0;
 
   list-style: none;
   border-top: 1px solid #cdcdcd;
 }
 
+.other-goods__promo {
+  margin: 0 auto;
+
+  height: 289px;
+  width: 280px;
+}
+
 @media (min-width: $tablet) {
   .other-goods {
-    margin: 0 0 68px;
+    margin: 0 0 75px;
   }
 
   .other-goods__title {
@@ -62,6 +69,57 @@
   }
 
   .other-goods__list {
+    margin: 0 30px 68px;
+  }
+
+  .other-goods__promo {
     margin: 0 30px;
+
+    height: 200px;
+    width: auto;
+  }
+}
+
+@media (min-width: $desktop) {
+  .other-goods {
+    display: flex;
+    flex-wrap: wrap;
+
+    margin-bottom: 86px;
+  }
+
+  .other-goods__title {
+    flex-basis: 100%;
+    margin-bottom: 4px;
+    padding: 76px 0;
+
+    letter-spacing: normal;
+
+    &::before {
+      flex-basis: 70px;
+      margin-right: 39px;
+    }
+  }
+
+  .other-goods__list {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    margin: 0 110px;
+    margin-right: 0;
+  }
+
+  .other-goods__item {
+    flex-grow: 1;
+  }
+
+  .other-goods__promo {
+    align-self: center;
+
+    margin-left: 80px;
+    margin-right: 110px;
+
+    height: 20.07vw;
+    width: 17vw;
   }
 }

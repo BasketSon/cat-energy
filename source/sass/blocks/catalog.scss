@@ -24,8 +24,14 @@
 }
 
 @media (min-width: $tablet) {
+  .catalog {
+    padding: 0 30px;
+
+    overflow: hidden;
+  }
+
   .catalog__title {
-    padding: 30px 30px 26px;
+    padding: 30px 0 26px;
     margin: 0;
 
     font-size: 60px;
@@ -36,7 +42,7 @@
   .catalog__list {
     justify-content: space-between;
 
-    padding: 0 30px;
+    padding: 0;
   }
 
   .catalog__item {
@@ -44,4 +50,30 @@
 
     box-sizing: border-box;
   }
+}
+
+@media (min-width: $desktop) {
+  .catalog {
+    padding: 0 110px;
+  }
+
+  .catalog__title {
+    padding: 70px 0 26px;
+  }
+
+  .catalog__list {
+    justify-content: flex-start;
+
+    padding: 0;
+  }
+
+  .catalog__item {
+    flex-basis: 20.08%;
+    margin-right: 6.56%;
+
+    &:nth-child(4n) {
+      margin-right: 0;
+    }
+  }
+
 }

@@ -5,12 +5,11 @@
   padding: 0;
 
   list-style: none;
-
-  counter-reset: list-item;
 }
 
 .features-list__item {
   position: relative;
+  z-index: 2;
 
   min-height: 60px;
   margin: 0;
@@ -75,6 +74,8 @@
 @media (min-width: $tablet) {
   .features-list {
     margin-bottom: -31px;
+
+    counter-reset: list-item;
   }
 
   .features-list__item {
