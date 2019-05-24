@@ -11,10 +11,10 @@
       <header class="page-header">
         <a class="page-header__logo" aria-label="Логотип Cat-energy">
           <picture>
-            <source media="(max-width: 767px)" srcset="img/logo-mobile.svg">
-            <source media="(min-width: 768px) and (max-width: 1439px)" srcset="img/logo-tablet.svg">
             <source media="(min-width: 1440px)" srcset="img/logo-desktop.svg">
-            <img class="page-header__logo-image" src="img/logo-desktop.svg" alt="Логотип Cat-energy" width="191" height="38">
+            <source media="(min-width: 768px) and (max-width: 1439px)" srcset="img/logo-tablet.svg">
+            <source media="(max-width: 767px)" srcset="img/logo-mobile.svg">
+            <img class="page-header__logo-image" src="img/logo-mobile.svg" alt="Логотип Cat-energy" width="191" height="38">
           </picture>
         </a>
 
@@ -25,7 +25,7 @@
               <a class="site-list__link site-list__link--active"><span class="site-list__active">Главная</span></a>
             </li>
             <li class="site-list__item">
-              <a class="site-list__link" href="#">Каталог продукции</a>
+              <a class="site-list__link" href="catalog.html">Каталог продукции</a>
             </li>
             <li class="site-list__item">
               <a class="site-list__link site-list__link--last" href="#">подбор программы</a>
@@ -40,10 +40,19 @@
             <b class="programs-header__slogan">Занялся собой? Займись котом!</b>
             <div class="programs-header__container">
               <picture>
-                <source media="(max-width: 767px)" srcset="img/index-can-mobile@1x.png">
-                <source media="(min-width: 768px)  and (max-width: 1439px)" srcset="img/index-can-tablet@1x.jpg">
-                <source media="(min-width: 1440px)" srcset="img/index-can-desktop@1x.png">
-                <img class="programs-header__picture" width="280" src="img/index-can-desktop@1x.png" alt="Корм с курицей">
+                <source media="(min-width: 1440px)"
+                  srcset="img/index-can-desktop@2x.png 2x,
+                          img/index-can-desktop@1x.png 1x">
+                <source media="(min-width: 768px)  and (max-width: 1439px)" type="image/webp"
+                  srcset="img/index-can-tablet@2x.webp 2x,
+                          img/index-can-tablet@1x.webp 1x">
+                <source media="(min-width: 768px)  and (max-width: 1439px)"
+                  srcset="img/index-can-tablet@2x.jpg 2x,
+                          img/index-can-tablet@1x.jpg 1x">
+                <source media="(max-width: 767px)"
+                  srcset="img/index-can-mobile@2x.png 2x,
+                          img/index-can-mobile@1x.png 1x">
+                <img class="programs-header__picture" width="280" src="img/index-can-mobile@1x.png" alt="Корм с курицей">
               </picture>
               <a class="programs-header__link" href="#">Подобрать программу</a>
             </div>
@@ -55,13 +64,13 @@
                 <p class="program-card__description">Ваш кот весит больше собаки и почти
                   утратил способность лазить по деревьям? Пора на диету!
                   Cat Energy Slim поможет вашему питомцу сбросить лишний вес.</p>
-                <a class="program-card__link" href="#">Каталог slim</a>
+                <a class="program-card__link" href="catalog.html#slim">Каталог slim</a>
                 </li>
                 <li class="programs__card program-card">
                   <h2 class="program-card__title program-card__title--pro">Набор массы</h2>
                   <p class="program-card__description program-card__description--short">Заработать авторитет среди дворовых котов и даже собак?
                     Серия Cat Energy Pro поможет вашему коту нарастить необходимые мышцы!</p>
-                  <a class="program-card__link" href="#">Каталог pro</a>
+                  <a class="program-card__link" href="catalog.html#pro">Каталог pro</a>
                 </li>
               </ul>
             </div>
@@ -107,10 +116,16 @@
               <div class="live-example__compare compare-block">
                   <div class="compare-block__before">
                     <picture>
-                      <source media="(max-width: 767px)" srcset="img/before-mobile@1x.png">
-                      <source media="(min-width: 768px)  and (max-width: 1439px)" srcset="img/before-tablet@1x.png">
-                      <source media="(min-width: 1440px)" srcset="img/before-desktop@1x.png">
-                      <img class="compare-block__before-picture" src="img/before-desktop@1x.png" width="320" alt="Фото до">
+                      <source media="(min-width: 1440px)"
+                        srcset="img/before-desktop@2x.png 2x,
+                                img/before-desktop@1x.png 1x">
+                      <source media="(min-width: 768px)  and (max-width: 1439px)"
+                        srcset="img/before-tablet@2x.png 2x,
+                                img/before-tablet@1x.png 1x">
+                      <source media="(max-width: 767px)"
+                        srcset="img/before-mobile@2x.png 2x,
+                                img/before-mobile@1x.png 1x">
+                      <img class="compare-block__before-picture" src="img/before-mobile@1x.png" width="320" alt="Фото до">
                     </picture>
                   </div>
                   <div class="compare-block__after">
@@ -136,12 +151,28 @@
 
               <div class="contacts__map map">
                 <picture>
-                  <source media="(max-width: 767px)" srcset="img/bg-map-mobile@1x.png">
-                  <source media="(min-width: 768px)  and (max-width: 1439px)" srcset="img/bg-map-tablet@1x.png">
-                  <source media="(min-width: 1440px)" srcset="img/bg-map-desktop@1x.png">
+                  <source media="(min-width: 1440px)" type="image/webp"
+                    srcset="img/bg-map-desktop@2x.webp 2x,
+                            img/bg-map-desktop@1x.webp 1x">
+                  <source media="(min-width: 768px)  and (max-width: 1439px)" type="image/webp"
+                    srcset="img/bg-map-tablet@2x.webp 2x,
+                            img/bg-map-tablet@1x.webp 1x">
+                  <source media="(max-width: 767px)" type="image/webp"
+                    srcset="img/bg-map-mobile@2x.webp 2x,
+                            img/bg-map-mobile@1x.webp 1x">
+
+                  <source media="(min-width: 1440px)"
+                    srcset="img/bg-map-desktop@2x.png 2x,
+                            img/bg-map-desktop@1x.png 1x">
+                  <source media="(min-width: 768px)  and (max-width: 1439px)"
+                    srcset="img/bg-map-tablet@2x.png 2x,
+                            img/bg-map-tablet@1x.png 1x">
+                  <source media="(max-width: 767px)"
+                    srcset="img/bg-map-mobile@2x.png 2x,
+                            img/bg-map-mobile@1x.png 1x">
                   <img class="map__map-picture" src="img/bg-map-mobile@1x.png" alt="Магазин находится по адресу ул. Большая Конюшенная, д. 19/8
+                  Санкт-Петербург">
                 </picture>
-                Санкт-Петербург">
                 <div class="map__pin">
                 </div>
               </div>
@@ -153,26 +184,50 @@
             </a>
             <ul class="page-footer__social social-list">
               <li class="social-list__item">
-                <a class="social-list__icon-link social-list__icon-link--vk" aria-label="vk"></a>
+                <a class="social-list__icon-link social-list__icon-link--vk" href="#" aria-label="vk">
+                  <svg width="24" height="24" class="social-list__icon-mobile">
+                    <use xlink:href="img/sprite.svg#icon-vk-mobile" />
+                  </svg>
+                  <svg width="30" height="30" class="social-list__icon-tablet">
+                    <use xlink:href="img/sprite.svg#icon-vk" />
+                  </svg>
+                </a>
               </li>
               <li class="social-list__item">
-                <a class="social-list__icon-link social-list__icon-link--inst" aria-label="instagram"></a>
+                <a class="social-list__icon-link social-list__icon-link--inst" href="#" aria-label="instagram">
+                  <svg width="17" height="17" class="social-list__icon-mobile">
+                    <use xlink:href="img/sprite.svg#icon-insta-mobile" />
+                  </svg>
+                  <svg width="24" height="24" class="social-list__icon-tablet">
+                    <use xlink:href="img/sprite.svg#icon-insta" />
+                  </svg>
+                </a>
               </li>
               <li class="social-list__item social-list__item">
-                <a class="social-list__icon-link social-list__icon-link--fb" aria-label="facebook"></a>
+                <a class="social-list__icon-link social-list__icon-link--fb" href="#" aria-label="facebook">
+                  <svg width="19" height="20" class="social-list__icon-mobile">
+                    <use xlink:href="img/sprite.svg#icon-fb-mobile" />
+                  </svg>
+                  <svg width="26" height="26" class="social-list__icon-tablet">
+                    <use xlink:href="img/sprite.svg#icon-fb" />
+                  </svg>
+                </a>
               </li>
             </ul>
             <a class="page-footer__copyright copyright" href="https://htmlacademy.ru/intensive/adaptive" aria-label="Ссылка на HTML Academy">
               HTML Academy
-              <svg xmlns="http://www.w3.org/2000/svg" viewBox="10 8 40 44" width="27" height="35" class="copyright__image">
-                <path d="M30.2 5h-.2l-19.7 2.1v36.2l19.7 11.7 19.7-11.7v-36.2l-19.5-2.1zm17 36.8l-17.2 10.2-17.2-10.2v-14.8l17.1 10.2v1.8l-11.7-7v1.8l11.8 7.1v1.9l-11.8-7v1.8l11.8 7 11.9-7.1v-7.6l5.3-3.2v15.1zm-.1-17l-4.7 2.8-2.2 1.3-10.3-6.1v1.8l8.8 5.3h-.1l-.2.1-1.3.7-7.3-4.3v1.8l5.8 3.4-1.4.9-4.3-2.6v1.8l2.9 1.7-2.9 1.7-17-10.1 17-10.2 17.2 10zm.1-1.8l-17.3-10.2-17.1 10.2v-13.6l17.2-1.8 17.2 1.8v13.6z"/>
+              <svg width="27" height="35" class="copyright__image">
+                <use xlink:href="img/sprite.svg#copyright-image" />
               </svg>
 
             </a>
           </footer>
         </div>
   <script src="js/menu-toggle.js"></script>
+  <script src="js/picturefill.js"></script>
   <script src="js/before-after-slider.js"></script>
-  <script src="js/onload.js"></script>
+  <script src="js/index-onload.js"></script>
+  <script src="js/svg4everybody.js"></script>
+  <script>svg4everybody()</script>
   </body>
 </html>

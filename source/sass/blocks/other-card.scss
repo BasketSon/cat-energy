@@ -1,0 +1,132 @@
+.other-card {
+  display: flex;
+  flex-wrap: wrap;
+
+  padding: 13px 0 18px;
+
+  border-bottom: 1px solid #cdcdcd;
+}
+
+.other-card__name {
+  flex-basis: 100%;
+  margin: 0;
+  margin-bottom: 14px;
+  padding: 0;
+
+  font-size: 16px;
+  line-height: 16px;
+  text-transform: uppercase;
+  font-weight: 400;
+
+  color: #222222;
+}
+
+.other-card__amount,
+.other-card__price {
+  flex-basis: 50%;
+  flex-grow: 1;
+  padding: 0;
+  margin: 0;
+  margin-bottom: 13px;
+
+  @include par();
+  font-size: 14px;
+  line-height: 14px;
+}
+
+.other-card__price {
+  text-align: right;
+}
+
+.other-card__order-button {
+  flex-basis: 100%;
+
+  margin: 0;
+  padding: 11px 0 10px;
+
+  @include link(16px, 20px)
+  color: #ffffff;
+  font-weight: 400;
+
+  background-color: $salad;
+  border: none;
+  &:hover {
+    background-color: $salad-hover;
+  }
+  &:active {
+    background-color: $salad-hover;
+    color: rgba(#ffffff, 0.3)
+  }
+}
+
+@media (min-width: $tablet) {
+  .other-card {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: baseline;
+
+    padding: 25px 36px 27px 37px;
+
+    border: 1px solid #cdcdcd;
+    border-top: none;
+  }
+
+  .other-card__name {
+    flex-basis: 50%;
+    margin-bottom: 25px;
+
+    font-size: 20px;
+    line-height: 20px;
+  }
+
+  .other-card__amount,
+  .other-card__price {
+    font-size: 16px;
+    line-height: 20px;
+    flex-basis: 95px;
+
+    padding: 0;
+    margin: 0;
+  }
+
+  .other-card__amount {
+    text-align: right;
+  }
+
+  .other-card__price {
+    flex-grow: 0;
+  }
+}
+
+@media (min-width: $desktop) {
+  .other-card {
+    padding: 15px 0;
+
+    border: none;
+    border-bottom: 1px solid #cdcdcd;
+  }
+
+  .other-card__name {
+    flex-basis: 31.75%;
+    margin: 0;
+    margin-right: 40px;
+  }
+
+  .other-card__amount {
+    flex-basis: 27.3%;
+    flex-grow: 0;
+
+    text-align: left;
+  }
+
+  .other-card__price {
+    flex-basis: 8.94%;
+    flex-grow: 0;
+
+    text-align: left;
+  }
+
+  .other-card__order-button {
+    flex-basis: 27.3%;
+  }
+}

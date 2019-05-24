@@ -12,7 +12,7 @@
   color: #444444;
 
   &:hover .copyright__image {
-    fill: $salad;
+    color: $salad;
   }
   &:active {
     opacity: 0.3;
@@ -23,7 +23,7 @@
   width: 27px;
   height: 35px;
 
-  fill: #666666;
+  color: #666666;
 }
 
 @media (min-width: $tablet) {

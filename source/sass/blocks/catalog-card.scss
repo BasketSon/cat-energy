@@ -1,0 +1,136 @@
+.catalog-card {
+  display: flex;
+  flex-wrap: wrap;
+
+  padding: 0 20px 24.2px;
+
+  border: 1px solid #ededed;
+  border-top: none;
+}
+
+.catalog-card__image-wraper {
+  flex-basis: 50%;
+  picture {
+    width: 100%
+  }
+}
+
+.catalog-card__image {
+  display: block;
+
+  width: 100%;
+}
+
+.catalog-card__info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+
+  flex-basis: 50%;
+  padding: 21.5px 0 21.5px;
+}
+
+.catalog-card__name {
+  margin: 0;
+  margin-bottom: 13px;
+  padding: 0;
+
+  font-size: 16px;
+  line-height: 20px;
+  font-weight: 400;
+  text-transform: uppercase;
+  br {
+    &:nth-child(2) {
+    display: none;
+    }
+  }
+}
+
+.catalog-card__characteristics {
+    width: 100%;
+}
+
+.catalog-card__order-button {
+  flex-basis: 100%;
+
+  margin: 0;
+  padding: 10px 0;
+
+  @include link(16px, 20px)
+  color: #ffffff;
+  font-weight: 400;
+
+  background-color: $salad;
+  border: none;
+  &:hover {
+    background-color: $salad-hover;
+  }
+  &:active {
+    background-color: $salad-hover;
+    color: rgba(#ffffff, 0.3)
+  }
+}
+
+@media (min-width: $tablet) {
+  .catalog-card {
+    padding: 0;
+    padding-bottom: 40px;
+
+
+    border: none;
+
+    background: linear-gradient(#ffffff 140px, $bggray 140px);
+  }
+
+  .catalog-card__image-wraper {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+
+    flex-basis: 100%;
+
+    height: 266px;
+    margin-bottom: 37px;
+    picture {
+      max-width: 385px;
+    }
+  }
+
+  .catalog-card__info {
+    flex-basis: 100%;
+    align-items: center;
+
+    margin-bottom: 31.5px;
+    padding: 0 37px 0 38px;
+  }
+
+  .catalog-card__name {
+    margin-bottom: 18px;
+    padding-left: 4px;
+
+    font-size: 20px;
+    text-align: center;
+
+    br {
+      &:nth-child(2) {
+        display: inline;
+      }
+      &:nth-child(1) {
+        display: none;
+      }
+    }
+  }
+
+    .catalog-card__order-button {
+      margin: 0 37px 0 38px;
+    }
+}
+
+@media (min-width: $desktop) {
+  .catalog-card__image-wraper {
+    picture {
+      max-width: 280px;
+    }
+  }
+}

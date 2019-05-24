@@ -1,0 +1,39 @@
+.characteristics {
+  border-collapse: collapse;
+
+  @include par();
+  font-size: 12px;
+  line-height: 16px;
+}
+
+.characteristics__row {
+  margin-bottom: 5px;
+}
+.characteristics__property {
+  padding: 0;
+}
+
+.characteristics__value {
+  padding: 0;
+  text-align: right;
+}
+
+@media (min-width: $tablet) {
+  .characteristics {
+    font-size: 16px;
+  }
+
+  .characteristics__row {
+    margin: 0;
+
+    border-bottom: 1px solid #cdcdcd;
+  }
+
+  .characteristics__property {
+    padding: 8px 0;
+  }
+
+  .characteristics__value {
+    padding: 8px 0;
+  }
+}

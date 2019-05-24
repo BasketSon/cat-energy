@@ -5,12 +5,11 @@
   padding: 0;
 
   list-style: none;
-
-  counter-reset: list-item;
 }
 
 .features-list__item {
   position: relative;
+  z-index: 2;
 
   min-height: 60px;
   margin: 0;
@@ -19,7 +18,7 @@
   padding-left: 80px;
   box-sizing: border-box;
 
-  counter-increment: list-item;
+  list-style-type: none;
 
   p {
     margin: 0;
@@ -44,21 +43,39 @@
   }
   &:first-child::before {
     background-image: url("../img/advantage-leaf@1x.png");
+    background-size: 50px 50px;
+    @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
+      background-image: url("../img/advantage-leaf@2x.png");
+    }
   }
   &:nth-child(2)::before {
     background-image: url("../img/advantage-powder@1x.png");
+    background-size: 50px 50px;
+    @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
+      background-image: url("../img/advantage-powder@2x.png");
+    }
   }
   &:nth-child(3)::before {
     background-image: url("../img/advantage-dining@1x.png");
+    background-size: 50px 50px;
+    @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
+      background-image: url("../img/advantage-dining@2x.png");
+    }
   }
   &:last-child::before {
     background-image: url("../img/advantage-clock@1x.png");
+    background-size: 50px 50px;
+    @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
+      background-image: url("../img/advantage-clock@2x.png");
+    }
   }
 }
 
 @media (min-width: $tablet) {
   .features-list {
     margin-bottom: -31px;
+
+    counter-reset: list-item;
   }
 
   .features-list__item {
@@ -84,18 +101,6 @@
 
       height: 80px;
       width: 80px;
-    }
-    &:first-child::before {
-      background-image: url("../img/advantage-leaf@1x.png");
-    }
-    &:nth-child(2)::before {
-      background-image: url("../img/advantage-powder@1x.png");
-    }
-    &:nth-child(3)::before {
-      background-image: url("../img/advantage-dining@1x.png");
-    }
-    &:last-child::before {
-      background-image: url("../img/advantage-clock@1x.png");
     }
 
     &:after {
@@ -138,18 +143,6 @@
 
     &:before {
       left: 0;
-    }
-    &:first-child::before {
-      background-image: url("../img/advantage-leaf@1x.png");
-    }
-    &:nth-child(2)::before {
-      background-image: url("../img/advantage-powder@1x.png");
-    }
-    &:nth-child(3)::before {
-      background-image: url("../img/advantage-dining@1x.png");
-    }
-    &:last-child::before {
-      background-image: url("../img/advantage-clock@1x.png");
     }
 
     &:after {

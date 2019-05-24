@@ -12,6 +12,12 @@
   linear-gradient(to right, #65a93c 25%, #63a73a 75%) no-repeat 50% 0;
   background-size: 320px 305px,
   100% 305px;
+
+  @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
+    background-image:
+    url("../img/index-background-mobile@2x.jpg"),
+    linear-gradient(to right, #65a93c 25%, #63a73a 75%);
+  }
 }
 
 .programs-header__prime-title {
