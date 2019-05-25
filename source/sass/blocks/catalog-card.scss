@@ -55,21 +55,6 @@
   flex-basis: 100%;
 
   margin: 0;
-  padding: 10px 0;
-
-  @include link(16px, 20px)
-  color: #ffffff;
-  font-weight: 400;
-
-  background-color: $salad;
-  border: none;
-  &:hover {
-    background-color: $salad-hover;
-  }
-  &:active {
-    background-color: $salad-hover;
-    color: rgba(#ffffff, 0.3)
-  }
 }
 
 @media (min-width: $tablet) {

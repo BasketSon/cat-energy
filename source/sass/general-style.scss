@@ -14,6 +14,15 @@ body {
   background-color: $bggray;
 }
 
+.visually-hidden {
+  position: absolute;
+  height: 0;
+  width: 0;
+  clip: rect(0, 0, 0, 0);
+  overflow: hidden;
+  white-space: nowrap;
+}
+
 .site-wraper {
   max-width: 500px;
   margin: 0 auto;
