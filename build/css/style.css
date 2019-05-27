@@ -2750,14 +2750,16 @@ body {
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
-    margin: 0 110px; }
-  .profile-form__list--extra {
-    margin: 0 110px; }
+    margin: 0; }
   .profile-form__item--age {
     margin-bottom: 0; }
   .profile-form__item--owner {
     margin: 0;
-    width: 46.72%; }
+    margin-left: 110px;
+    width: 39.58%; }
+    .profile-form__item--owner:nth-child(even) {
+      margin-left: auto;
+      margin-right: 110px; }
   .profile-form__item--extra {
     width: 20.08%; }
   .profile-form__cat-info {

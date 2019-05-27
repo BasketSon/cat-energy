@@ -455,11 +455,7 @@
       flex-wrap: wrap;
       justify-content: space-between;
 
-      margin: 0 110px;
-    }
-
-    &--extra {
-      margin: 0 110px;
+      margin: 0;
     }
   }
 
@@ -470,7 +466,12 @@
 
     &--owner {
       margin: 0;
-      width: 46.72%;
+      margin-left: 110px;
+      width: 39.58%;
+      &:nth-child(even) {
+        margin-left: auto;
+        margin-right: 110px;
+      }
     }
 
     &--extra {
