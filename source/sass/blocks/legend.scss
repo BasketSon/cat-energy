@@ -2,7 +2,6 @@
   display: flex;
   align-items: baseline;
 
-  margin: 0;
   padding: 30px 0 32px;
   width: 100%;
   box-sizing: border-box;
@@ -30,5 +29,29 @@
 
     background-color: $salad;
     transform: translateY(-7px);
+  }
+}
+
+@media (min-width: $tablet) {
+  .legend {
+    font-size: 36px;
+    line-height: 36px;
+
+    br {
+      display: none;
+    }
+
+    &::before {
+      width: calc(9.24% - 41px);
+      margin-right: 39px;
+
+      transform: translateY(-10px);
+    }
+
+    &::after {
+      margin-left: 41px;
+
+      transform: translateY(-10px);
+    }
   }
 }

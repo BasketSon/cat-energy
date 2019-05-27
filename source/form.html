@@ -4,7 +4,9 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Cat-energy adaptive</title>
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="preload" onload="this.rel = 'stylesheet'" href="fonts/oswaldregular.woff2" as="font">
+    <link rel="preload" onload="this.rel = 'stylesheet'" href="fonts/oswaldmedium.woff2" as="font">
+    <link rel="stylesheet" href="css/style.min.css">
   </head>
   <body>
     <div class="site-wraper site-wraper--inner">
@@ -42,11 +44,11 @@
               <ul class="profile-form__list">
                 <li class="profile-form__item">
                   <label for="cat-name">имя:*</label>
-                  <input type="text" name="cat-name" id="cat-name" value="" placeholder="Барсик">
+                  <input type="text" name="cat-name" id="cat-name" value="" placeholder="Барсик" required>
                 </li>
                 <li class="profile-form__item">
                   <label for="cat-weight">Вес (кг):*</label>
-                  <input type="number" name="cat-weight" id="cat-weight" value="" placeholder="7" min="0" max="99">
+                  <input type="number" name="cat-weight" id="cat-weight" value="" placeholder="7" min="0" max="99" required>
                 </li>
                 <li class="profile-form__item">
                   <label for="cat-age">Возраст (лет):</label>
@@ -56,17 +58,17 @@
             </fieldset>
             <fieldset class="profile-form__program-type">
               <ul class="profile-form__list">
-                <li class="profile-form__item">
+                <li class="profile-form__item profile-form__item--program">
                   <input class="profile-form__option visually-hidden"
                   type="radio" id="loose-w" name="program-type" checked>
                   <label class="profile-form__option-name" for="loose-w">Похудение</label>
                 </li>
-                <li class="profile-form__item">
+                <li class="profile-form__item profile-form__item--program">
                   <input class="profile-form__option visually-hidden"
                   type="radio" id="gain-w" name="program-type">
                   <label class="profile-form__option-name" for="gain-w">Набор массы</label>
                 </li>
-                <li class="profile-form__item">
+                <li class="profile-form__item profile-form__item--program">
                   <input class="profile-form__option visually-hidden"
                   type="radio" id="dont-know" name="program-type">
                   <label class="profile-form__option-name" for="dont-know">Не знаю (Нужен ваш совет)</label>
@@ -74,19 +76,19 @@
               </ul>
             </fieldset>
             <fieldset class="profile-form__owner-info">
-              <legend class="profile-form__legend legend">Контактные данные<br>
+              <legend class="profile-form__legend profile-form__legend--owner legend">Контактные данные<br>
               (владельца кота)</legend>
               <ul class="profile-form__list">
                 <li class="profile-form__item profile-form__item--owner">
                   <label for="e-mail">E-mail:*</label>
-                  <input type="email" name="e-mail" id="e-mail" value="" placeholder="kuklachev@gmail.com">
+                  <input type="email" name="e-mail" id="e-mail" value="" placeholder="kuklachev@gmail.com" required>
                   <svg class="profile-form__icon profile-form__icon--email" width="17" height="13">
                     <use xlink:href="img/sprite.svg#icon-mail" />
                   </svg>
                 </li>
                 <li class="profile-form__item profile-form__item--owner">
                   <label for="phone">Телефон:*</label>
-                  <input type="tel" name="phone" id="phone" value="" placeholder="8 (960) 900-60-90" pattern="[0-9() -]{1,25}">
+                  <input type="tel" name="phone" id="phone" value="" placeholder="8 (960) 900-60-90" pattern="[0-9() -]{1,25}" required>
                   <svg class="profile-form__icon profile-form__icon--phone" width="20" height="20">
                     <use xlink:href="img/sprite.svg#icon-phone" />
                   </svg>
@@ -94,12 +96,12 @@
               </ul>
             </fieldset>
             <fieldset class="profile-form__comment">
-              <legend class="profile-form__legend legend">Комментарий</legend>
+              <legend class="profile-form__legend profile-form__legend--comment legend">Комментарий</legend>
               <textarea class="profile-form__comment-text" id="comment" name="comment" rows="7" cols="39" placeholder="Расскажите обо всех повадках кота"></textarea>
             </fieldset>
             <fieldset class="profile-form__extra">
-              <legend class="profile-form__legend legend">Дополнительно</legend>
-              <ul class="profile-form__list">
+              <legend class="profile-form__legend profile-form__legend--extra legend">Дополнительно</legend>
+              <ul class="profile-form__list profile-form__list--extra">
                 <li class="profile-form__item profile-form__item--extra">
                   <input class="profile-form__option visually-hidden" type="checkbox" id="sugarfree" name="sugarfree" checked>
                   <label class="profile-form__option-name profile-form__option-name--extra" for="sugarfree">Сахарозаменитель</label>
@@ -118,7 +120,7 @@
                 </li>
               </ul>
             </fieldset>
-            <button type="submit" class="profile-form__submit button-salad" name="submit">отправить заявку</button>
+            <button type="submit" class="button-salad button-salad--profile profile-form__submit" name="submit">отправить заявку</button>
             <p class="profile-form__notification">* — Обязательные поля</p>
 
           </form>
