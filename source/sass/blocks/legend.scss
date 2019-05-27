@@ -55,3 +55,12 @@
     }
   }
 }
+
+@media (min-width: $desktop) {
+  .legend {
+    &::before {
+      width: 70px;
+      margin-right: 39px;
+    }
+  }
+}

@@ -297,11 +297,8 @@
   }
 
   .profile-form__item {
-    position: relative;
-    display: flex;
-    align-items: center;
-
     margin-bottom: 20px;
+
     &--program {
       margin-bottom: 13px;
     }
@@ -437,4 +434,91 @@
   .profile-form__notification {
     font-size: 16px;
   }
+}
+
+@media (min-width: $desktop) {
+  .profile-form {
+    padding-bottom: 82px;
+    input {
+      &[type="text"],
+      &[type="email"],
+      &[type="tel"],
+      &[type="number"] {
+        padding: 13.5px 17px;
+      }
+    }
+  }
+
+  .profile-form__list {
+    &--owner {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+
+      margin: 0 110px;
+    }
+
+    &--extra {
+      margin: 0 110px;
+    }
+  }
+
+  .profile-form__item {
+    &--age {
+      margin-bottom: 0;
+    }
+
+    &--owner {
+      margin: 0;
+      width: 46.72%;
+    }
+
+    &--extra {
+      width: 20.08%;
+    }
+  }
+
+  .profile-form__cat-info {
+    width: 39.58%;
+    margin: 0;
+    margin-left: 110px;
+  }
+
+  .profile-form__program-type {
+    width: 39.58%;
+    box-sizing: border-box;
+    margin: 0;
+    margin-right: 110px;
+    margin-bottom: 40px;
+    margin-left: auto;
+  }
+
+  .profile-form__owner-info {
+    margin-bottom: 38px;
+  }
+
+  .profile-form__comment {
+    margin-bottom: 36px;
+  }
+
+  .profile-form__comment-text {
+    width: calc(100% - 220px);
+
+    margin: 0 110px;
+  }
+
+  .profile-form__extra {
+    margin-bottom: 28px;
+  }
+
+  .profile-form__submit {
+    width: calc(47.22% - 110px);
+    margin: 0 5.56% 0 110px;
+  }
+
+  .profile-form__notification {
+    font-size: 16px;
+    padding-bottom: 4px;
+  }
+
 }

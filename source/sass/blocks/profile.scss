@@ -16,3 +16,9 @@
     line-height: 30px;
   }
 }
+
+@media (min-width: $desktop) {
+  .profile__heading {
+    margin: 30px 110px 27px;
+  }
+}
