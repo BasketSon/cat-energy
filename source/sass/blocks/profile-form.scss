@@ -1,0 +1,524 @@
+.profile-form {
+  display: flex;
+  flex-direction: column;
+
+  padding: 40px 0 31px;
+  font-size: 16px;
+
+  input::placeholder,
+  textarea::placeholder {
+    font-family: "Oswald", Arial, serif;
+    font-size: 16px;
+    text-transform: uppercase;
+    line-height: 18px;
+    font-weight: 400;
+    font-style: normal;
+    color: #444444;
+  }
+
+  input {
+    &[type="text"],
+    &[type="email"],
+    &[type="tel"],
+    &[type="number"] {
+      flex-grow: 1;
+      padding: 12.5px 15px;
+      border: 1px solid #e6e6e6;
+
+      &:hover {
+        border-color: #cdcdcd;
+      }
+
+      &:focus {
+        border-color: #444444;
+        outline: none;
+      }
+      &:focus + .profile-form__icon {
+        color: $salad;
+      }
+
+      &:invalid {
+        border-color: #ff8282;
+      }
+      &:invalid + .profile-form__icon {
+        color: #ff8282;
+      }
+    }
+  }
+}
+
+.profile-form__list {
+  margin: 0;
+  padding: 0;
+
+  list-style: none;
+}
+
+.profile-form__item {
+  position: relative;
+  display: flex;
+  align-items: center;
+
+  margin-bottom: 13.5px;
+  &--owner {
+    margin-left: 20px;
+    margin-right: 20px;
+    input {
+      &[type="email"],
+      &[type="tel"] {
+        padding-right: 45px;
+      }
+    }
+    &:last-child {
+      margin-bottom: 0px;
+    }
+  }
+  &--extra {
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+}
+
+.profile-form__cat-info {
+  padding: 0 20px;
+  margin: 0;
+  margin-bottom: 10px;
+  border: none;
+
+  label {
+    margin-right: 15px;
+  }
+}
+
+.profile-form__program-type {
+  margin: 0;
+  padding: 21px 19px 7px;
+
+  border: 1px solid #cdcdcd;
+}
+
+.profile-form__option:focus + .profile-form__option-name::before {
+    border-color: #444444;
+  }
+
+.profile-form__option-name {
+  padding: 5.5px 0 5.5px 46px;
+  &::before {
+    content: "";
+    position: absolute;
+
+    top: 0;
+    left: 0;
+
+    width: 30px;
+    height: 30px;
+    box-sizing: border-box;
+
+    border-radius: 50%;
+    border: 1px solid #cdcdcd;
+  }
+
+  &:hover::before {
+    border-color: #bababa;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+
+  &--extra::before {
+    border-radius: 0;
+  }
+
+  &::after {
+    display: none;
+
+    content: "";
+    position: absolute;
+
+    top: 9px;
+    left: 9px;
+
+    width: 12px;
+    height: 12px;
+    box-sizing: border-box;
+
+    border-radius: 50%;
+    background-color: $salad;
+  }
+  &--extra::after {
+    top: 7px;
+    left: 5px;
+
+    width: 21px;
+    height: 16px;
+
+    border-radius: 0;
+    color: $salad;
+
+    background: url("../img/icon-tick.svg") no-repeat 0 0;
+    background-size: contain;
+  }
+}
+
+.profile-form__option {
+  &:checked + .profile-form__option-name::after {
+    display: block;
+  }
+}
+
+.profile-form__owner-info {
+  padding: 0;
+  margin: 0;
+
+  border: none;
+
+  label {
+    margin-right: 10px;
+  }
+}
+
+.profile-form__legend {
+  margin: 0;
+}
+
+.profile-form__icon {
+  position: absolute;
+  color: #222222;
+
+  &--email {
+  top: 17px;
+  right: 19px;
+
+  height: 13px;
+  width: 17px;
+  }
+
+  &--phone {
+  top: 14px;
+  right: 15px;
+
+  height: 20px;
+  width: 20px;
+  }
+
+}
+
+.profile-form__comment {
+  padding: 0;
+  margin: 0;
+
+  border: none;
+}
+
+.profile-form__comment-text {
+  box-sizing: border-box;
+  width: calc(100% - 40px);
+
+  margin: 0 20px;
+  padding: 14px 10px 5px 14px;
+
+  border: 1px solid #e6e6e6;
+
+  &:hover {
+    border-color: #cdcdcd;
+  }
+
+  &:focus {
+    border-color: #444444;
+    outline: none;
+  }
+}
+
+.profile-form__extra {
+  padding: 0;
+  margin: 0;
+  margin-bottom: 24px;
+
+  border: none;
+}
+
+.profile-form__extra-name {
+  padding: 6px 0 6px 46px;
+
+  &::before {
+    content: "";
+    position: absolute;
+
+    top: 0;
+    left: 0;
+
+    width: 30px;
+    height: 30px;
+    box-sizing: border-box;
+
+    border: 1px solid #cdcdcd;
+  }
+}
+
+.profile-form__submit {
+  margin: 0 20px 21px;
+}
+
+.profile-form__notification {
+  align-self: center;
+  margin: 0;
+  padding: 0;
+
+  @include par();
+  text-transform: none;
+  font-size: 14px;
+  line-height: 16px;
+}
+
+@media (min-width: $tablet) {
+  .profile-form {
+    flex-direction: row;
+    flex-wrap: wrap;
+
+    padding: 40px 0 72px;
+    font-size: 20px;
+    line-height: 20px;
+
+    input::placeholder,
+    textarea::placeholder {
+      font-size: 20px;
+      line-height: 20px;
+    }
+
+    input {
+      &[type="text"],
+      &[type="email"],
+      &[type="tel"],
+      &[type="number"] {
+        padding: 13.5px 17px;
+      }
+    }
+  }
+
+  .profile-form__item {
+    margin-bottom: 20px;
+
+    &--program {
+      margin-bottom: 13px;
+    }
+    &--owner {
+      margin-left: 9.24%;
+      margin-right: 8.7%;
+      input {
+        &[type="email"],
+        &[type="tel"] {
+          padding-right: 45px;
+        }
+      }
+      &:last-child {
+        margin-bottom: 0px;
+      }
+    }
+    &--extra {
+      width: 45.48%;
+      margin: 0;
+      margin-bottom: 32px;
+    }
+  }
+
+  .profile-form__cat-info {
+    width: 82.06%;
+    padding: 0 ;
+    margin: 0 8.7% 0 9.24%;
+    margin-bottom: 54px;
+
+    label {
+      margin-right: 17px;
+    }
+  }
+
+  .profile-form__program-type {
+    width: 82.06%;
+    margin: 0 8.7% 46px 9.24%;
+    padding: 24px 28px 10px;
+  }
+
+  .profile-form__option-name {
+    padding: 10px 0 10px 58px;
+    &::before {
+      width: 40px;
+      height: 40px;
+    }
+
+    &::after {
+      top: 11px;
+      left: 11px;
+
+      width: 18px;
+      height: 18px;
+    }
+    &--extra::after {
+      top: 12px;
+      left: 10px;
+    }
+  }
+
+  .profile-form__legend {
+    &--owner {
+      margin-bottom: 44px;
+    }
+
+    &--comment {
+      margin-bottom: 44px;
+    }
+
+    &--extra {
+      margin-bottom: 26px;
+    }
+  }
+
+  .profile-form__owner-info {
+    margin-bottom: 36px;
+    width: 100%;
+
+    label {
+      margin-right: 20px;
+    }
+  }
+
+  .profile-form__icon {
+    &--email {
+    top: 20px;
+    }
+
+    &--phone {
+    top: 17px;
+    right: 16px;
+    }
+  }
+
+  .profile-form__comment {
+    padding: 0;
+    margin: 0;
+    margin-bottom: 34px;
+    width: 100%;
+  }
+
+  .profile-form__comment-text {
+    width: 82.06%;
+
+    margin: 0 8.7% 0 9.24%;
+    padding: 14px 15px 1px 17px;
+  }
+
+  .profile-form__extra {
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    margin-bottom: 21px;
+
+    border: none;
+  }
+
+  .profile-form__list {
+    &--extra {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+
+      margin: 0 8.7% 0 9.24%;
+    }
+  }
+
+  .profile-form__submit {
+    width: 36.85%;
+    margin: 0 7.81% 0 9.24%;
+  }
+
+  .profile-form__notification {
+    font-size: 16px;
+  }
+}
+
+@media (min-width: $desktop) {
+  .profile-form {
+    padding-bottom: 82px;
+    input {
+      &[type="text"],
+      &[type="email"],
+      &[type="tel"],
+      &[type="number"] {
+        padding: 13.5px 17px;
+      }
+    }
+  }
+
+  .profile-form__list {
+    &--owner {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+
+      margin: 0 110px;
+    }
+
+    &--extra {
+      margin: 0 110px;
+    }
+  }
+
+  .profile-form__item {
+    &--age {
+      margin-bottom: 0;
+    }
+
+    &--owner {
+      margin: 0;
+      width: 46.72%;
+    }
+
+    &--extra {
+      width: 20.08%;
+    }
+  }
+
+  .profile-form__cat-info {
+    width: 39.58%;
+    margin: 0;
+    margin-left: 110px;
+  }
+
+  .profile-form__program-type {
+    width: 39.58%;
+    box-sizing: border-box;
+    margin: 0;
+    margin-right: 110px;
+    margin-bottom: 40px;
+    margin-left: auto;
+  }
+
+  .profile-form__owner-info {
+    margin-bottom: 38px;
+  }
+
+  .profile-form__comment {
+    margin-bottom: 36px;
+  }
+
+  .profile-form__comment-text {
+    width: calc(100% - 220px);
+
+    margin: 0 110px;
+  }
+
+  .profile-form__extra {
+    margin-bottom: 28px;
+  }
+
+  .profile-form__submit {
+    width: calc(47.22% - 110px);
+    margin: 0 5.56% 0 110px;
+  }
+
+  .profile-form__notification {
+    font-size: 16px;
+    padding-bottom: 4px;
+  }
+
+}
