@@ -23,7 +23,7 @@
     "gulp-webp": "^4.0.1",
     "imagemin-mozjpeg": "^8.0.0",
     "run-sequence": "^2.2.1",
-    "stylelint": "9.10.x",
+    "stylelint": "^9.10.1",
     "stylelint-config-htmlacademy": "0.1.x"
   },
   "scripts": {
