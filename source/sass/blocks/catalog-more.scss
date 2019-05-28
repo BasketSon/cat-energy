@@ -59,17 +59,19 @@
   padding: 10px 0;
 
   @include link(16px, 20px)
-  color: #444444;
+    color: #444444;
   font-weight: 400;
 
   background-color: $bggray;
   border: none;
+
   &:hover {
     background-color: #ebebeb;
   }
+
   &:active {
     background-color: #ebebeb;
-    color: rgba(#444444, 0.3)
+    color: rgba(#444444, 0.3);
   }
 }
 

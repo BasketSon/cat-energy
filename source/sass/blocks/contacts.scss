@@ -2,7 +2,7 @@
   margin: 0;
 
   &--gray {
-    background-color: $bggray
+    background-color: $bggray;
   }
 }
 
@@ -19,15 +19,18 @@
   padding: 0;
   width: 50%;
   box-sizing: border-box;
+
   &--plea {
     padding-right: 10px;
     font-size: 16px;
     line-height: 20px;
     text-transform: uppercase;
   }
+
   &--adress {
     display: flex;
     flex-direction: column;
+
     @include par;
     line-height: 20px;
   }
@@ -36,24 +39,26 @@
 
 @media (min-width: $tablet) {
   .contacts__text-block {
-      padding: 0 70px;
+    padding: 0 70px;
   }
 
   .contacts__text {
     margin: 64px 0 55px;
     width: 30%;
     box-sizing: border-box;
+
     &--plea {
       font-size: 20px;
       line-height: 25px;
-
     }
+
     &--adress {
       padding-right: 2px;
       align-items: flex-end;
 
       text-align: right;
       font-size: 16px;
+
       span {
         margin-top: 20px;
       }
@@ -80,9 +85,11 @@
 
   .contacts__text {
     width: 50%;
+
     &--plea {
-      padding-left: 13.33%
+      padding-left: 13.33%;
     }
+
     &--adress {
       padding: 0;
       padding-left: 7%;

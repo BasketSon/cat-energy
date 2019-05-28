@@ -68,8 +68,7 @@
     display: flex;
     padding: 0;
 
-    background:
-    linear-gradient(#ffffff 195px, $bggray 195px);
+    background: linear-gradient(#ffffff 195px, $bggray 195px);
 
     &::after {
       content: "";
@@ -79,8 +78,7 @@
       right: 0;
       width: 4.86%;
 
-      background:
-      linear-gradient(#ffffff 195px, #eaeaea 195px);
+      background: linear-gradient(#ffffff 195px, #eaeaea 195px);
     }
   }
 
@@ -94,7 +92,7 @@
 
   .live-example__compare {
     flex-basis: 50%;
-    margin-right: 4.86%
+    margin-right: 4.86%;
   }
 
   .live-example__title {

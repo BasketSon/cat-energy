@@ -2,17 +2,19 @@
   padding: 10px 0;
 
   @include link(16px, 20px)
-  color: #ffffff;
+    color: #ffffff;
   font-weight: 400;
 
   background-color: $salad;
   border: none;
+
   &:hover {
     background-color: $salad-hover;
   }
+
   &:active {
     background-color: $salad-hover;
-    color: rgba(#ffffff, 0.3)
+    color: rgba(#ffffff, 0.3);
   }
 }
 

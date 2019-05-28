@@ -7,6 +7,7 @@
 
   list-style: none;
   overflow: hidden;
+
   &--show {
     height: auto;
   }
@@ -16,6 +17,7 @@
   display: block;
   padding: 24px 0 20px;
   text-align: center;
+
   @include link();
 
   border-bottom: 1px solid #e6e6e6;
@@ -23,6 +25,7 @@
   &:hover {
     opacity: 0.6;
   }
+
   &:active {
     opacity: 0.3;
   }
@@ -38,6 +41,7 @@
   position: relative;
 
   margin: 0 auto;
+
   &::after {
     content: "";
 
@@ -74,7 +78,6 @@
 }
 
 @media (min-width: $desktop) {
-
   .site-list__link {
     padding: 22px 0 20px;
 
@@ -94,7 +97,7 @@
   }
 
   .site-wraper--inner .site-list__link {
-    color:inherit;
+    color: inherit;
   }
 
   .site-wraper--inner .site-list__active {

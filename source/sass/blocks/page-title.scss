@@ -7,14 +7,15 @@
   line-height: 60px;
 
   border-bottom: 1px solid #e6e6e6;
+
   &--form {
     padding-bottom: 25px;
 
     border-bottom: none;
   }
 }
-@media (min-width: $tablet) {
 
+@media (min-width: $tablet) {
   .page-title {
     padding: 31px 29px 25px;
     margin: 0;

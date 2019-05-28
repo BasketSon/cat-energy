@@ -8,15 +8,15 @@
   color: #ffffff;
 
   background:
-  url("../img/index-background-mobile@1x.jpg") no-repeat 50% 0,
-  linear-gradient(to right, #65a93c 25%, #63a73a 75%) no-repeat 50% 0;
+    url("../img/index-background-mobile@1x.jpg") no-repeat 50% 0,
+    linear-gradient(to right, #65a93c 25%, #63a73a 75%) no-repeat 50% 0;
   background-size: 320px 305px,
-  100% 305px;
+    100% 305px;
 
   @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
     background-image:
-    url("../img/index-background-mobile@2x.jpg"),
-    linear-gradient(to right, #65a93c 25%, #63a73a 75%);
+      url("../img/index-background-mobile@2x.jpg"),
+      linear-gradient(to right, #65a93c 25%, #63a73a 75%);
   }
 }
 
@@ -63,16 +63,18 @@
   padding: 11px 0;
 
   @include link(14px, 18px)
-  color: #ffffff;
+    color: #ffffff;
   font-weight: 400;
 
   background-color: $salad;
+
   &:hover {
     background-color: $salad-hover;
   }
+
   &:active {
     background-color: $salad-hover;
-    color: rgba(#ffffff, 0.3)
+    color: rgba(#ffffff, 0.3);
   }
 }
 
@@ -96,6 +98,7 @@
     font-size: 60px;
     line-height: 60px;
   }
+
   .programs-header__slogan {
     margin-bottom: 20px;
     padding-left: 87px;
@@ -122,7 +125,6 @@
 
     font-size: 20px;
     line-height: 20px;
-
   }
 }
 
@@ -139,12 +141,12 @@
     box-sizing: border-box;
 
     color: #111111;
-
   }
 
   .programs-header__prime-title {
     padding: 0;
   }
+
   .programs-header__slogan {
     margin-bottom: 68px;
     padding: 0;

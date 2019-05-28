@@ -10,8 +10,9 @@
 
 .catalog-card__image-wraper {
   flex-basis: 50%;
+
   picture {
-    width: 100%
+    width: 100%;
   }
 }
 
@@ -40,15 +41,16 @@
   line-height: 20px;
   font-weight: 400;
   text-transform: uppercase;
+
   br {
     &:nth-child(2) {
-    display: none;
+      display: none;
     }
   }
 }
 
 .catalog-card__characteristics {
-    width: 100%;
+  width: 100%;
 }
 
 .catalog-card__order-button {
@@ -77,6 +79,7 @@
 
     height: 266px;
     margin-bottom: 37px;
+
     picture {
       max-width: 385px;
     }
@@ -101,15 +104,16 @@
       &:nth-child(2) {
         display: inline;
       }
+
       &:nth-child(1) {
         display: none;
       }
     }
   }
 
-    .catalog-card__order-button {
-      margin: 0 37px 0 38px;
-    }
+  .catalog-card__order-button {
+    margin: 0 37px 0 38px;
+  }
 }
 
 @media (min-width: $desktop) {

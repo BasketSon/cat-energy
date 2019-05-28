@@ -43,7 +43,7 @@
     height: 49px;
     width: 35px;
 
-    background-image: url("../img/icon-cat-slim.svg")
+    background-image: url("../img/icon-cat-slim.svg");
   }
 
   &--pro::after {
@@ -53,7 +53,7 @@
     width: 67px;
     height: 28px;
 
-    background-image: url("../img/icon-cat-pro.svg")
+    background-image: url("../img/icon-cat-pro.svg");
   }
 }
 
@@ -97,7 +97,7 @@
     right: 0;
     width: 33px;
 
-    background-image: url("../img/icon-right-arrow-verylong.svg")
+    background-image: url("../img/icon-right-arrow-verylong.svg");
   }
 
   &:active {
@@ -153,6 +153,7 @@
     line-height: 24px;
 
     border-bottom: none;
+
     &--short {
       padding-right: 35px;
     }

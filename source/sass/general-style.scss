@@ -44,18 +44,18 @@ body {
     max-width: none;
 
     background:
-    url("../img/index-background-desktop@1x.jpg") no-repeat top 0 right 0,
-    linear-gradient(to right, #ffffff 50%, #65a93c 50%) no-repeat 0 0;
+      url("../img/index-background-desktop@1x.jpg") no-repeat top 0 right 0,
+      linear-gradient(to right, #ffffff 50%, #65a93c 50%) no-repeat 0 0;
     background-size:
-    720px 696px,
-    100% 696px;
+      720px 696px,
+      100% 696px;
 
     background-color: #ffffff;
 
 
     @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
       background-image: url("../img/index-background-desktop@2x.jpg"),
-      linear-gradient(to right, #ffffff 50%, #65a93c 50%);
+        linear-gradient(to right, #ffffff 50%, #65a93c 50%);
     }
 
     &--inner {

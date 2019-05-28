@@ -33,6 +33,7 @@
         border-color: #444444;
         outline: none;
       }
+
       &:focus + .profile-form__icon {
         color: $salad;
       }
@@ -40,6 +41,7 @@
       &:invalid {
         border-color: #ff8282;
       }
+
       &:invalid + .profile-form__icon {
         color: #ff8282;
       }
@@ -60,19 +62,23 @@
   align-items: center;
 
   margin-bottom: 13.5px;
+
   &--owner {
     margin-left: 20px;
     margin-right: 20px;
+
     input {
       &[type="email"],
       &[type="tel"] {
         padding-right: 45px;
       }
     }
+
     &:last-child {
-      margin-bottom: 0px;
+      margin-bottom: 0;
     }
   }
+
   &--extra {
     margin-left: 20px;
     margin-right: 20px;
@@ -98,11 +104,12 @@
 }
 
 .profile-form__option:focus + .profile-form__option-name::before {
-    border-color: #444444;
-  }
+  border-color: #444444;
+}
 
 .profile-form__option-name {
   padding: 5.5px 0 5.5px 46px;
+
   &::before {
     content: "";
     position: absolute;
@@ -146,6 +153,7 @@
     border-radius: 50%;
     background-color: $salad;
   }
+
   &--extra::after {
     top: 7px;
     left: 5px;
@@ -187,21 +195,20 @@
   color: #222222;
 
   &--email {
-  top: 17px;
-  right: 19px;
+    top: 17px;
+    right: 19px;
 
-  height: 13px;
-  width: 17px;
+    height: 13px;
+    width: 17px;
   }
 
   &--phone {
-  top: 14px;
-  right: 15px;
+    top: 14px;
+    right: 15px;
 
-  height: 20px;
-  width: 20px;
+    height: 20px;
+    width: 20px;
   }
-
 }
 
 .profile-form__comment {
@@ -302,19 +309,23 @@
     &--program {
       margin-bottom: 13px;
     }
+
     &--owner {
       margin-left: 9.24%;
       margin-right: 8.7%;
+
       input {
         &[type="email"],
         &[type="tel"] {
           padding-right: 45px;
         }
       }
+
       &:last-child {
-        margin-bottom: 0px;
+        margin-bottom: 0;
       }
     }
+
     &--extra {
       width: 45.48%;
       margin: 0;
@@ -341,6 +352,7 @@
 
   .profile-form__option-name {
     padding: 10px 0 10px 58px;
+
     &::before {
       width: 40px;
       height: 40px;
@@ -353,6 +365,7 @@
       width: 18px;
       height: 18px;
     }
+
     &--extra::after {
       top: 12px;
       left: 10px;
@@ -384,12 +397,12 @@
 
   .profile-form__icon {
     &--email {
-    top: 20px;
+      top: 20px;
     }
 
     &--phone {
-    top: 17px;
-    right: 16px;
+      top: 17px;
+      right: 16px;
     }
   }
 
@@ -439,6 +452,7 @@
 @media (min-width: $desktop) {
   .profile-form {
     padding-bottom: 82px;
+
     input {
       &[type="text"],
       &[type="email"],
@@ -468,6 +482,7 @@
       margin: 0;
       margin-left: 110px;
       width: 39.58%;
+
       &:nth-child(even) {
         margin-left: auto;
         margin-right: 110px;
@@ -521,5 +536,4 @@
     font-size: 16px;
     padding-bottom: 4px;
   }
-
 }

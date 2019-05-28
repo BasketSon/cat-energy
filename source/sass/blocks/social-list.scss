@@ -11,6 +11,7 @@
 .social-list__item {
   margin-right: 31px;
   margin-bottom: 10px;
+
   &:last-child {
     margin-right: 0;
   }
@@ -20,6 +21,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
+
   &--fb {
     justify-content: flex-start;
   }
@@ -29,14 +31,14 @@
 
   cursor: pointer;
 
-  color: #231F20;
+  color: #231f20;
 
   &:hover {
     color: $salad;
   }
 
   &:active {
-    opacity: 0.3
+    opacity: 0.3;
   }
 }
 
@@ -47,13 +49,14 @@
 @media (min-width: $tablet) {
   .social-list {
     margin-right: -30px;
-    padding: 19px 0px 8px 0px;
+    padding: 19px 0 8px 0;
 
     border-bottom: none;
   }
 
   .social-list__item {
     margin-right: 22px;
+
     &:last-child {
       margin-right: 0;
     }
