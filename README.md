@@ -1,7 +1,8 @@
-Cat-energy
-Учебный проект по адаптивной верстке с использованием технологий:<br>
--препроцессор SASS
--автоматизатор GULP
+<h1>Cat-energy</h1>
+<p>Учебный проект по адаптивной верстке с использованием технологий:</p>
+<ul>
+  <li>препроцессор SASS</li>
+  <li>автоматизатор GULP</li>
 
-Ссылка на GH-Pages
-https://basketson.github.io/cat-energy/
+<a href="https://basketson.github.io/cat-energy/">Ссылка на GH-Pages</a>
+
